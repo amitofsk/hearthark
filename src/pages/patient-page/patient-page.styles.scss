@@ -1,0 +1,52 @@
+.patient-page {
+  padding: 5rem 4rem;
+}
+
+.heart-rate {
+  display: flex;
+  flex-direction: column;
+  background-color: #4285f4;
+  width: 30rem;
+  height: 20rem;
+  padding: 3rem 2.5rem 4rem;
+  color: #fff;
+  font-size: 1.7rem;
+  border-radius: 2rem;
+  box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.1);
+  margin-bottom: 4rem;
+}
+
+.heart-rate__info {
+  margin-top: auto;
+  display: flex;
+}
+
+.heart-rate__number {
+  font-size: 6rem;
+}
+
+.heart-rate__icon {
+  align-self: center;
+  height: 6rem;
+  width: 6rem;
+  margin-left: 3rem;
+}
+
+.RHR-container {
+  display: flex;
+  flex-direction: column;
+  background-color: #faf9f6;
+  border-radius: 2rem;
+  box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.1);
+  padding: 2rem;
+  width: 45rem;
+}
+
+.heading-tertiary {
+  color: #bbb;
+}
+
+.chart__heading {
+  padding-left: 1.5rem;
+  padding-bottom: 1rem;
+}
