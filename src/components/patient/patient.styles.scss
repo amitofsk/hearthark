@@ -1,0 +1,100 @@
+.patient {
+  grid-row: 2 / 3;
+  grid-column: 1 / span 5;
+  display: flex;
+  border-radius: 2rem;
+  text-transform: capitalize;
+  background-color: #fff;
+  box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.1);
+}
+
+.patient__info-main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2.5rem;
+  border-right: 1px solid var(--clr-grey-9);
+}
+
+.patient__img {
+  background-color: rosybrown;
+  border-radius: 100%;
+  width: 5rem;
+  height: 5rem;
+  margin-bottom: 1.5rem;
+}
+
+.patient__email {
+  color: var(--clr-grey-7);
+  padding: 1rem 0;
+  text-transform: lowercase;
+}
+
+.patient__appointment-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.patient__appointment-text {
+  font-weight: bold;
+  padding-bottom: 0.75rem;
+}
+
+.appointment__container {
+  display: flex;
+  color: var(--clr-grey-7);
+}
+
+.appointment__past,
+.appointment__upcoming {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0 2rem;
+}
+
+.appointment__num {
+  font-weight: bold;
+  font-size: 2rem;
+  color: var(--clr-primary-1);
+  padding-bottom: 0.5rem;
+}
+
+.btn--primary {
+  border: none;
+  outline: none;
+  background-color: var(--clr-primary);
+  color: #fff;
+  text-transform: capitalize;
+  padding: 1rem;
+  border-radius: 1rem;
+  cursor: pointer;
+}
+
+.btn--patinet {
+  margin-top: 2rem;
+  align-self: stretch;
+}
+
+.patient__info {
+  display: grid;
+  grid-template-columns: repeat(2, max-content);
+  gap: 2rem;
+  padding: 2rem;
+}
+
+.patient__info-group {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.patient__info-name {
+  color: var(--clr-grey-7);
+  padding: 1rem;
+}
+
+.patient__info-value {
+  font-weight: bold;
+}

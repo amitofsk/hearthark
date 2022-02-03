@@ -1,0 +1,17 @@
+.documents {
+  grid-row: 2 / 3;
+  grid-column: 9 / span 3;
+}
+
+.documents__item {
+  padding: 1rem;
+  border: 1px solid var(--clr-grey-10);
+  border-radius: 1rem;
+  box-shadow: 0 0.5rem 0.5rem rgba(0, 0, 0, 0.1);
+  margin-bottom: 0.5rem;
+}
+
+.documents__pdf {
+  display: flex;
+  justify-content: space-between;
+}

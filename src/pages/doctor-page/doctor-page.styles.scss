@@ -1,0 +1,12 @@
+.doctor-page {
+  display: grid;
+  grid-template-columns: auto 1fr;
+}
+
+.content {
+  display: grid;
+  grid-template-columns: repeat(11, 1fr);
+  grid-template-rows: 4rem auto auto;
+  gap: 2rem;
+  padding: 2.5rem;
+}
