@@ -150,7 +150,7 @@ function readPatientFile(recordPiece, elementName, elementOut) {
   }
   if (recordPiece == 8) {
     //Pick off only file name
-    correctData = correctData.substr(34, 8);
+    correctData = correctData.substr(34, 9);
   }
   elementOut.innerHTML = correctData;
 }

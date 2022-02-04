@@ -31,6 +31,9 @@ class PatientAMPage extends React.Component{
 	  <br></br>
           <br></br>
 	  <br></br>
+	  <p id="ptest">Testing</p>
+	  <br></br>
+	  <button type="button" onClick={()=>hFunction()}>SimpleGet</button>
 	  <br></br>
 
 
@@ -43,6 +46,27 @@ class PatientAMPage extends React.Component{
 
   );
 };
+}
+/*
+ function httpGet(theUrl)
+{
+	var xmlHttp= new XMLHttpRequest();
+	xmlHttp.open("GET", theUrl, false);
+	xmlHttp.send(null);
+	return xmlHttp.responseText;
+}
+*/
+function hFunction(){
+//	var myUrl="Access-Control-Allow-Origin: https://www.google.com";
+//	var myUrl="https://www.google.com";
+//	var outString=httpGet(myUrl);
+//	document.getElementById("ptest").innerHTML=outString;
+
+	fetch("Access-Control-Allow-Origin: https://www.google.com")
+	.then(response=>response.json())
+	.then(data => document.getElementById("ptest").innerHTML=data.total);
+
+	
 }
 
 
@@ -104,7 +128,7 @@ function readPatientFile(recordPiece, elementName, elementOut) {
 	if(recordPiece==8)
 	{
 		//Pick off only file name
-		correctData=correctData.substr(34,8);
+		correctData=correctData.substr(34,9);
 	}
 	elementOut.innerHTML=correctData;
 }
