@@ -1,0 +1,58 @@
+.box {
+  background-color: #fff;
+  border-radius: 2rem;
+  box-shadow: var(--main-shadow);
+  padding: 2rem;
+}
+
+.upcoming-appointments {
+  grid-row: 2 / 3;
+  grid-column: 5 / 9;
+}
+
+.upcoming__item {
+  display: grid;
+  grid-template-columns: 1fr 9rem 7rem;
+  gap: 2rem;
+  align-items: center;
+  margin: 2rem 0;
+}
+
+.upcoming__group {
+  display: flex;
+  flex-direction: column;
+}
+
+.upcoming__doctor {
+  color: var(--clr-primary);
+  font-weight: bold;
+  padding-bottom: 0.5rem;
+}
+
+.upcoming__patient {
+  span {
+    font-weight: bold;
+  }
+}
+
+.upcoming__time {
+  font-weight: bold;
+}
+
+.upcoming__state,
+.upcoming__state--success,
+.upcoming__state--fail {
+  justify-self: end;
+}
+
+.upcoming__state {
+  color: var(--clr-grey-8);
+}
+
+.upcoming__state--success {
+  color: var(--clr-green-dark);
+}
+
+.upcoming__state--fail {
+  color: var(--clr-red-dark);
+}

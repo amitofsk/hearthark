@@ -5,7 +5,7 @@
   background-color: #fff;
   padding: 2rem 2.5rem;
   text-transform: capitalize;
-  height: 100vh;
+  min-height: 100vh;
 }
 
 .side__header {
@@ -15,6 +15,9 @@
 .side__group {
   display: flex;
   align-items: center;
+  border: none;
+  outline: none;
+  background-color: transparent;
   padding-bottom: 2rem;
   color: #777;
   font-weight: bold;

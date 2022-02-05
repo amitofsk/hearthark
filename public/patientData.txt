@@ -1,4 +1,0 @@
-Isaac, London   , 25, O, 186, 90, sonar.ogg;
-Jenny, Cleveland, 40, A, 175, 82, drip.ogg ;
-Sarah, San Diego, 80, B, 170, 85, bark.ogg ;
-

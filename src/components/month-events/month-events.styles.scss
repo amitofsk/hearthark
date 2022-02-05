@@ -1,0 +1,10 @@
+.month-events {
+  grid-column: 9 / -1;
+  grid-row: 3 / 4;
+}
+
+.month-events__list {
+  li {
+    margin-bottom: 1rem;
+  }
+}

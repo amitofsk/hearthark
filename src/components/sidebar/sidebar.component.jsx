@@ -1,4 +1,5 @@
 import React from "react";
+import { useNavigate } from "react-router-dom";
 import { Link } from "react-router-dom";
 
 import { FaRegUser, FaDollarSign } from "react-icons/fa";
@@ -14,17 +15,25 @@ import { MdOutlineDashboard } from "react-icons/md";
 import "./sidebar.styles.scss";
 
 const Sidebar = () => {
+  const navigate = useNavigate();
+
   return (
     <aside className="sidebar">
       <h3 className="side__header">Heart Hack</h3>
-      <Link to="/dashboard" className="side__group">
+      <button
+        className="side__group"
+        onClick={() => navigate("/doctor/dashboard")}
+      >
         <MdOutlineDashboard className="side__icon" />
         <span>dashboard</span>
-      </Link>
-      <Link to="/patients" className="side__group">
+      </button>
+      <button
+        className="side__group"
+        onClick={() => navigate("/doctor/patient")}
+      >
         <FaRegUser className="side__icon" />
         <span>patients</span>
-      </Link>
+      </button>
       <Link to="/messages" className="side__group">
         <FiMessageCircle className="side__icon" />
         <span>messages</span>

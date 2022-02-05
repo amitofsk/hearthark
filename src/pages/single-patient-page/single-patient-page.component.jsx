@@ -6,9 +6,9 @@ import Patient from "../../components/patient/patient.component";
 import Notes from "../../components/notes/notes.component";
 import Documents from "../../components/documents/documents.component";
 
-import "./doctor-page.styles.scss";
+import "./single-patient-page.styles.scss";
 
-const DoctorPage = () => {
+const SinglePatientPage = () => {
   return (
     <>
       <section className="doctor-page">
@@ -155,4 +155,4 @@ function readPatientFile(recordPiece, elementName, elementOut) {
   elementOut.innerHTML = correctData;
 }
 
-export default DoctorPage;
+export default SinglePatientPage;

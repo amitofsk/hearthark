@@ -1,0 +1,9 @@
+.dashboard-page {
+  display: grid;
+  grid-template-columns: auto 1fr;
+}
+
+.calendar {
+  grid-column: 9 / -1;
+  grid-row: 2 / 3;
+}

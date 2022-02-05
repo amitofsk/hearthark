@@ -6,7 +6,7 @@ const Notes = () => {
   return (
     <article className="notes container">
       <p className="heading-secondary">Notes</p>
-      <ul className="notes__list">
+      <ul className="list">
         <li className="notes__item">
           - this patient needs to get full amount of test
         </li>
