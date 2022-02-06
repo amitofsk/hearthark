@@ -1,4 +1,7 @@
 import React from "react";
+import {} from "fft-js";
+import {} from "wavefile";
+
 class PatientAMPage extends React.Component{
 	render() {
 //const PatientAMPage = () => {
@@ -33,7 +36,7 @@ class PatientAMPage extends React.Component{
 	  <br></br>
 	  <p id="ptest">Testing</p>
 	  <br></br>
-	  <button type="button" onClick={()=>hFunction()}>SimpleGet</button>
+	  <button type="button" onClick={()=>jFunction()}>SimpleGet</button>
 	  <br></br>
 
 
@@ -47,6 +50,40 @@ class PatientAMPage extends React.Component{
   );
 };
 }
+
+
+function jFunction() {
+        document.getElementById("ptest").innerHTML="Yes";
+//        const A= require('arcsecond');
+ //       const B=require('arcsecond-binary');
+        //      var fs=require('fs');
+        var fft=require('fft-js').fft;
+        var WaveFile = require('wavefile').WaveFile;
+        var signalX=[11,15,8,0];
+        var bigX=fft(signalX);
+        var xString=signalX[0];
+        var maxValue=Math.max.apply(Math,signalX);
+        var maxIndex=signalX.indexOf(maxValue);
+        //wav.fromBuffer(myBuffer);
+   //     const file =  new Blob([document.getElementById('recorder').value], {type: 'text/plain'});
+        //var bufferPromise= file.arrayBuffer();
+     //   var myBuffer;
+      //  fetch(URL.createObjectURL(file)).then(res => myBuffer=res.arrayBuffer())
+
+       // var wav=new WaveFile();
+        //wav.fromBuffer(myBuffer);
+
+        document.getElementById("ptest").innerHTML=maxIndex;
+
+
+
+
+
+}
+
+
+
+
 /*
  function httpGet(theUrl)
 {
@@ -57,14 +94,18 @@ class PatientAMPage extends React.Component{
 }
 */
 function hFunction(){
+
+	
+	
+	
 //	var myUrl="Access-Control-Allow-Origin: https://www.google.com";
 //	var myUrl="https://www.google.com";
 //	var outString=httpGet(myUrl);
 //	document.getElementById("ptest").innerHTML=outString;
 
-	fetch("Access-Control-Allow-Origin: https://www.google.com")
-	.then(response=>response.json())
-	.then(data => document.getElementById("ptest").innerHTML=data.total);
+//	fetch("Access-Control-Allow-Origin: https://www.google.com")
+//	.then(response=>response.json())
+//	.then(data => document.getElementById("ptest").innerHTML=data.total);
 
 	
 }

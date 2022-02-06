@@ -1,6 +1,6 @@
 import React from "react";
 import "./patient.styles.scss";
-
+import {isaac1, jenny1, sarah1} from "./patientData.jsx";
 
 const Patient = () => {
 
@@ -71,14 +71,14 @@ const Patient = () => {
 	  </audio>
 	  </div>
 	  <div>
-	  <p id="tempStorage" hidden >Yo</p>
+	  <p id="tempStorage" hidden>Yo</p>
 	  </div>
 	  </div>
     </article>
   );
 };
 
-
+/*
 //This function is taken from: https://stackoverflow.com/questions/14446447/how-to-read-a-local-text-file
 function readTextFile(file) {
   var rawFile = new XMLHttpRequest();
@@ -95,15 +95,23 @@ function readTextFile(file) {
   };
   rawFile.send(null);
 }
-
+*/
 function updatePatientInfo(inName) {
-  //
+  
+   
+
+   
   //OK, for now I'm hard coding this...
   //This needs to be fixed to work more generally...
-  var temp=readTextFile("patientData.txt");
+//  var temp=readTextFile("patientData.txt");
   var nameString=inName;
-  var allData= document.getElementById('tempStorage').innerHTML;
+  //var allData= document.getElementById('tempStorage').innerHTML;
+  if(inName=='Jenny') {nameString=jenny1;}
+  else if (inName=='Isaac') {nameString=isaac1;}
+  else if (inName=='Sarah') {nameString=sarah1;};
+  var allData=nameString;
   //document.getElementById('tempStorage').innerHTML=allData;
+ 
   var strStartPoint = 0;
   var strEndPoint = 10;
   var rowData1 = "";
