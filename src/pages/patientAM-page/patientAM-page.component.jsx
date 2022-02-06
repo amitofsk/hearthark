@@ -1,6 +1,6 @@
 import React from "react";
-import {} from "fft-js";
-import {} from "wavefile";
+//import {} from "fft-js";
+//import {} from "wavefile";
 
 class PatientAMPage extends React.Component{
 	render() {
