@@ -1,6 +1,7 @@
 import React from "react";
 import "./patient.styles.scss";
 import {isaac1, jenny1, sarah1} from "./patientData.jsx";
+import {formString} from "../form/form.component.jsx";
 
 const Patient = () => {
 
@@ -60,11 +61,7 @@ const Patient = () => {
           <span className="patient__info-value">active member</span>
         </div>
 	  <div>
-	  <button type="button" onClick={()=> updatePatientInfo('Sarah')}>Patient 1</button>
-	  <br></br>
-	  <button type="button" onClick={()=> updatePatientInfo('Jenny')}>Patient 2</button>
-	  <br></br>
-	  <button type="button" onClick={()=>updatePatientInfo('Isaac')}>Patient 3</button>
+	  <button type="button" onClick={()=> updatePatientInfo(formString)}>Update Patient Info</button>
 	  <br></br>
 	  <audio id="audiox" controls>
 	  <source id="mysource" src="sonar.ogg" type="audio/mpeg"></source>
@@ -77,7 +74,12 @@ const Patient = () => {
     </article>
   );
 };
-
+/*
+function tempFunction() 
+{
+	document.getElementById("tempStorage").innerHTML=formString;
+}
+*/
 /*
 //This function is taken from: https://stackoverflow.com/questions/14446447/how-to-read-a-local-text-file
 function readTextFile(file) {
@@ -108,7 +110,8 @@ function updatePatientInfo(inName) {
   //var allData= document.getElementById('tempStorage').innerHTML;
   if(inName=='Jenny') {nameString=jenny1;}
   else if (inName=='Isaac') {nameString=isaac1;}
-  else if (inName=='Sarah') {nameString=sarah1;};
+  else if (inName=='Sarah') {nameString=sarah1;}
+  else {nameString='No ';};
   var allData=nameString;
   //document.getElementById('tempStorage').innerHTML=allData;
  
