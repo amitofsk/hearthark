@@ -57,10 +57,10 @@ function jFunction() {
 //        const A= require('arcsecond');
  //       const B=require('arcsecond-binary');
         //      var fs=require('fs');
-        var fft=require('fft-js').fft;
-        var WaveFile = require('wavefile').WaveFile;
+//        var fft=require('fft-js').fft;
+  //      var WaveFile = require('wavefile').WaveFile;
         var signalX=[11,15,8,0];
-        var bigX=fft(signalX);
+   //     var bigX=fft(signalX);
         var xString=signalX[0];
         var maxValue=Math.max.apply(Math,signalX);
         var maxIndex=signalX.indexOf(maxValue);
