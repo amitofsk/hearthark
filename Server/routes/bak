@@ -1,0 +1,13 @@
+var express = require('express');
+var crypto = require('crypto');
+var skyflow = require('skyflow-node');
+
+var router = express.Router();
+
+
+/* GET home page. */
+router.get('/am', function(req, res, next) {
+  res.render('index', { title: 'ExpressXXX' });
+});
+
+module.exports = router;
